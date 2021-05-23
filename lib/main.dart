@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:shop/screens/edit_product_screen.dart';
 
 import './screens/product_overview_screen.dart';
 import './screens/product_detail_screen.dart';
 import './screens/order_screen.dart';
+import './screens/user_products.dart';
 import 'providers/products.dart';
 import 'providers/cart.dart';
 import 'providers/order.dart';
@@ -39,6 +41,8 @@ class _MyAppState extends State<MyApp> {
             ProductDetailScreen.routeName: (_) => ProductDetailScreen(),
             CartScreen.routeName: (_) => CartScreen(),
             OrderScreen.routeName: (_) => OrderScreen(),
+            UserProductScreen.routeName: (_) => UserProductScreen(),
+            EditProductScreen.routeName:(_)=>EditProductScreen(),
           },
         ));
   }
